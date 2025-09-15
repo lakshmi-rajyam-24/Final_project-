@@ -1,59 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bootstrap Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Stratos Edge Learning — Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <header id="site-header" class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/logo.png" alt="Stratos Edge Learning logo" class="logo">
+        <span class="brand-text">STRATOS EDGE</span>
+      </a>
 
-<div class="container mt-4">
-  <!-- Alert -->
-  <div class="alert alert-info text-center" role="alert">
-    🚀 Welcome to my Bootstrap Portfolio!
-  </div>
+      <nav id="main-nav" class="nav">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
 
-  <div class="row">
-    <!-- Card 1 -->
-    <div class="col-12 col-sm-6 col-md-4 mb-4">
-      <div class="card h-100">
-        <img src="https://images.pexels.com/photos/270404/pexels-photo-270404.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=300" class="card-img-top" alt="Landing Page">
-        <div class="card-body">
-          <h5 class="card-title">Landing Page</h5>
-          <p class="card-text">A responsive landing page with a clean UI.</p>
-          <a href="#" class="btn btn-primary">View Project</a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Open menu">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Upskill with industry-focused courses</h1>
+          <p>Practical training in Web Development, Data Science & AI from instructors who ship real projects.</p>
+          <div class="hero-cta">
+            <a class="btn primary" href="services.html">Explore Services</a>
+            <a class="btn ghost" href="contact.html">Get in touch</a>
+          </div>
+        </div>
+        <div class="hero-media">
+          <img src="assets/hero.jpg" alt="Hero banner" />
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Card 2 -->
-    <div class="col-12 col-sm-6 col-md-4 mb-4">
-      <div class="card h-100">
-        <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=300" class="card-img-top" alt="Form Validator">
-        <div class="card-body">
-          <h5 class="card-title">Form Validator</h5>
-          <p class="card-text">JavaScript-based form validation in real-time.</p>
-          <a href="#" class="btn btn-success">View Project</a>
+    <section class="features container">
+      <h2 class="section-title">Why choose Stratos Edge</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Hands-on Projects</h3>
+          <p>Build industry-ready portfolios using real datasets and product requirements.</p>
+        </article>
+        <article class="card">
+          <h3>Mentor Support</h3>
+          <p>Weekly mentor sessions and code reviews to accelerate learning.</p>
+        </article>
+        <article class="card">
+          <h3>Placement Guidance</h3>
+          <p>Interview prep and resume reviews to help you land the job you want.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="highlight container">
+      <div class="highlight-inner">
+        <div>
+          <h3>Upcoming Batch</h3>
+          <p>Next batch starts: <strong>October 1, 2025</strong></p>
         </div>
+        <a href="contact.html" class="btn primary small">Apply Now</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>STRATOS EDGE</h4>
+        <p>Training that moves you from learning to shipping.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Email: hello@stratosedge.example</p>
       </div>
     </div>
+    <div class="copyright">© 2025 Stratos Edge Learning</div>
+  </footer>
 
-    <!-- Card 3 -->
-    <div class="col-12 col-sm-6 col-md-4 mb-4">
-      <div class="card h-100">
-        <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=300" class="card-img-top" alt="Portfolio">
-        <div class="card-body">
-          <h5 class="card-title">Portfolio Website</h5>
-          <p class="card-text">Personal portfolio built using Bootstrap layout and components.</p>
-          <a href="#" class="btn btn-warning">View Project</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+  <button id="scrollTop" title="Scroll to top">↑</button>
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
