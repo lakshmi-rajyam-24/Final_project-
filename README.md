@@ -35,3 +35,4 @@ Recreated a multi-page version of the Stratos Edge Learning website using custom
    git init
    git add .
    git commit -m "Initial commit - Stratos Edge final project"
+
